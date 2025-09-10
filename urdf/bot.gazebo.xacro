@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<robot name="bumperbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <gazebo reference="base_link">
+        <mu1>0.5</mu1>
+        <mu2>0.5</mu2>
+        <kp>1000000.0</kp>
+        <kd>1.0</kd>
+        <maxVel>0.1</maxVel>
+        <minDepth>0.001</minDepth>
+    </gazebo>
+
+
+    <gazebo reference="wheel_right_link">
+        <mu1>1.0</mu1>
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>1.0</kd>
+        <maxVel>0.1</maxVel>
+        <minDepth>0.001</minDepth>
+        <fdir1>1 0 0</fdir1>
+    </gazebo>
+
+
+    <gazebo reference="wheel_left_link">
+        <mu1>1.0</mu1>
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>1.0</kd>
+        <maxVel>0.1</maxVel>
+        <minDepth>0.001</minDepth>
+        <fdir1>1 0 0</fdir1>
+    </gazebo>
+
+    <gazebo reference="caster_front_link">
+        <mu1>0.10</mu1>
+        <mu2>0.10</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <maxVel>0.1</maxVel>
+        <minDepth>0.001</minDepth>
+    </gazebo>
+
+    <gazebo reference="caster_rear_link">
+        <mu1>0.10</mu1>
+        <mu2>0.10</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <maxVel>0.1</maxVel>
+        <minDepth>0.001</minDepth>
+    </gazebo>
+</robot>
